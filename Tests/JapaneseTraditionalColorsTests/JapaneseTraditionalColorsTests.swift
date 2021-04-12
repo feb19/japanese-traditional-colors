@@ -1,14 +1,10 @@
 import XCTest
 import SwiftUI
-@testable import JapaneseColors
+@testable import JapaneseTraditionalColors
 
-final class JapaneseColorsTests: XCTestCase {
+final class JapaneseTraditionalColorsTests: XCTestCase {
     func testRgbToColor() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        let colors = JapaneseColors()
-        print(colors.aijiro.name ?? "")
+        let colors = JapaneseTraditionalColors()
         if #available(iOS 14.0, *) {
             XCTAssertEqual(Color.rgbToColor(colors.aijiro.rgb).cgColor, Color.aijiro.cgColor)
         } else {

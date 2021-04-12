@@ -13,7 +13,7 @@ import SwiftUI
 @available(iOS 13.0, *)
 @available(OSX 10.15, *)
 extension Color {
-    private static let japaneseColor = JapaneseColors()
+    private static let japaneseColor = JapaneseTraditionalColors()
 
     static func rgbToColor(_ rgb: [Double]) -> Color {
         return Color(red: rgb[0]/255, green: rgb[1]/255, blue: rgb[2]/255)

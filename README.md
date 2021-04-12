@@ -1,4 +1,4 @@
-# JapaneseColors
+# JapaneseTraditionalColors
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
@@ -12,14 +12,14 @@
 Color.tokihairo: Color
 ```
 
-`JapaneseColors` から、名称や読みを取り出すこともできます。
+`JapaneseTraditionalColor` から、名称や読みを取り出すこともできます。
 
 ```swift
-JapaneseColors.kakishibuiro: JapaneseColor
+JapaneseTraditionalColors.kakishibuiro: JapaneseTraditionalColor
 ```
 
 ```swift
-struct JapaneseColor {
+struct JapaneseTraditionalColor {
     var rgb: [Double]!
     var name: String!
     var yomi: String!

@@ -1,7 +1,7 @@
 import XCTest
 
-import JapaneseColorsTests
+import JapaneseTraditionalColorsTests
 
 var tests = [XCTestCaseEntry]()
-tests += JapaneseColorsTests.allTests()
+tests += JapaneseTraditionalColorsTests.allTests()
 XCTMain(tests)
