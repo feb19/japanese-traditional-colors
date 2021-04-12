@@ -17,6 +17,6 @@ final class JapaneseColorsTests: XCTestCase {
     }
 
     static var allTests = [
-        ("testRgbToColor", testRgbToColor),
+        ("testRgbToColor", testRgbToColor)
     ]
 }

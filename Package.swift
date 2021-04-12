@@ -5,12 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "JapaneseColors",
-    platforms: [.iOS(.v13), .macOS(.v10_15)],
+    platforms: [.iOS(.v13), .macOS(.v10_15), .tvOS(.v13), .watchOS(SupportedPlatform.WatchOSVersion.v6)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "JapaneseColors",
-            targets: ["JapaneseColors"]),
+            targets: ["JapaneseColors"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,7 +24,7 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "JapaneseColorsTests",
-            dependencies: ["JapaneseColors"]),
+            dependencies: ["JapaneseColors"])
     ],
     swiftLanguageVersions: [.v5]
 )
