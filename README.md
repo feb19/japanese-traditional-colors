@@ -1,3 +1,4 @@
 # JapaneseColors
 
-A description of this package.
+Japanese Traditional Colors  
+https://en.wikipedia.org/wiki/Traditional_colors_of_Japan
