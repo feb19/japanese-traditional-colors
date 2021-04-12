@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "JapaneseColors",
-    platforms: [.iOS(.v13), .macOS(.v10_15), .tvOS(.v13), .watchOS(SupportedPlatform.WatchOSVersion.v6)],
+    platforms: [.iOS(.v13), .macOS(.v10_15), .tvOS(.v13), .watchOS(.v6)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
