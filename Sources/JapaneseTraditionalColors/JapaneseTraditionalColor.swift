@@ -7,7 +7,9 @@
 
 import Foundation
 
-public struct JapaneseTraditionalColor {
+public struct JapaneseTraditionalColor: Identifiable {
+    public var id: UUID
+    
     public let rgb: [Double]!
     public let name: String!
     public let yomi: String!
@@ -16,5 +18,6 @@ public struct JapaneseTraditionalColor {
         self.rgb = rgb
         self.name = name
         self.yomi = yomi
+        self.id = UUID()
     }
 }
