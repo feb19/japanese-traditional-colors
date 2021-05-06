@@ -8,9 +8,9 @@
 import Foundation
 
 public final class JapaneseTraditionalColor {
-    public var rgb: [Double]!
-    public var name: String!
-    public var yomi: String!
+    public let rgb: [Double]!
+    public let name: String!
+    public let yomi: String!
     
     public init(rgb: [Double], name: String, yomi: String) {
         self.rgb = rgb
