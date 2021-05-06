@@ -1,7 +1,7 @@
-import SwiftUI
+import Foundation
 
 // swiftlint:disable type_body_length
-public class JapaneseTraditionalColors {
+public final class JapaneseTraditionalColors {
     public init() {
         
     }
