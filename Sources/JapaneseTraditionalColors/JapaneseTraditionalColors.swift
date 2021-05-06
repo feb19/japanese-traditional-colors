@@ -1,7 +1,10 @@
 import Foundation
 
 // swiftlint:disable type_body_length
-public final class JapaneseTraditionalColors {
+public enum JapaneseTraditionalColors {
+    
+    
+    
     public static let ikkonzome = JapaneseTraditionalColor(rgb: [240, 143, 144], name: "一斤染", yomi: "Ikkonzome")
     public static let kobaiiro = JapaneseTraditionalColor(rgb: [219, 90, 107], name: "紅梅色", yomi: "Kōbai-iro")
     public static let sakurairo = JapaneseTraditionalColor(rgb: [252, 201, 185], name: "桜色", yomi: "Sakura-iro")
