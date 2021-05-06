@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  JapaneseTraditionalColor.swift
 //  
 //
 //  Created by Nobuhiro Takahashi on 2021/04/12.
