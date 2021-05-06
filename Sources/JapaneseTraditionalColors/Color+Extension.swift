@@ -50,7 +50,7 @@ public extension Color {
         )
     }
 
-    static var ikkonzome: Color { return Color.rgbToColor(japaneseColor.ikkonzome.rgb) }
+    static var ikkonzome: Color { return Color.rgbToColor(JapaneseTraditionalColors.ikkonzome.rgb) }
     static var kobaiiro: Color { return Color.rgbToColor(japaneseColor.kobaiiro.rgb) }
     static var sakurairo: Color { return Color.rgbToColor(japaneseColor.sakurairo.rgb) }
     static var usubeni: Color { return Color.rgbToColor(japaneseColor.usubeni.rgb) }
