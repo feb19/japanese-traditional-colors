@@ -323,7 +323,7 @@ public enum JapaneseTraditionalColors {
     public static let aonibi = JapaneseTraditionalColor(rgb: [79, 73, 68], name: "青鈍", yomi: "Aonibi")
     public static let mizuiro = JapaneseTraditionalColor(rgb: [134, 171, 165], name: "水色", yomi: "Mizu-iro")
     public static let kamenozoki = JapaneseTraditionalColor(rgb: [198, 194, 182], name: "瓶覗", yomi: "Kamenozoki")
-    public static let shinbashiiro = JapaneseTraditionalColor(rgb: [108, 127], name: "新橋色", yomi: "Shinbashi-iro")
+    public static let shinbashiiro = JapaneseTraditionalColor(rgb: [0, 108, 127], name: "新橋色", yomi: "Shinbashi-iro")
     public static let ainezumi = JapaneseTraditionalColor(rgb: [92, 84, 78], name: "藍鼠", yomi: "Ainezumi")
     public static let onandoiro = JapaneseTraditionalColor(rgb: [54, 65, 65], name: "御納戸色", yomi: "Onando-iro")
     public static let chigusairo = JapaneseTraditionalColor(rgb: [49, 117, 137], name: "千草色", yomi: "Chigusa-iro")
