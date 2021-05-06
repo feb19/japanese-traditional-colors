@@ -12,7 +12,7 @@ import SwiftUI
 @available(watchOS 6.0, *)
 @available(iOS 13.0, *)
 @available(OSX 10.15, *)
-extension Color {
+public extension Color {
     private static let japaneseColor = JapaneseTraditionalColors()
 
     static func rgbToColor(_ rgb: [Double]) -> Color {
