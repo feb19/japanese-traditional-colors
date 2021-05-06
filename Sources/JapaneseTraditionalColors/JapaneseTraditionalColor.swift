@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class JapaneseTraditionalColor {
+public struct JapaneseTraditionalColor {
     public let rgb: [Double]!
     public let name: String!
     public let yomi: String!
