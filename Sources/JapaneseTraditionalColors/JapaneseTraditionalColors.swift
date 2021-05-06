@@ -6,7 +6,7 @@ public struct JapaneseTraditionalColors {
         
     }
     
-    public let ikkonzome = JapaneseTraditionalColor(rgb: [240, 143, 144], name: "一斤染", yomi: "Ikkonzome")
+    public static let ikkonzome = JapaneseTraditionalColor(rgb: [240, 143, 144], name: "一斤染", yomi: "Ikkonzome")
     public var kobaiiro = JapaneseTraditionalColor(rgb: [219, 90, 107], name: "紅梅色", yomi: "Kōbai-iro")
     public var sakurairo = JapaneseTraditionalColor(rgb: [252, 201, 185], name: "桜色", yomi: "Sakura-iro")
     public var usubeni = JapaneseTraditionalColor(rgb: [242, 102, 108], name: "薄紅", yomi: "Usubeni")
