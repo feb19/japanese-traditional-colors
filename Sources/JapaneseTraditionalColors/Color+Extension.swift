@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 
-@available(tvOS 13.0, *)
-@available(watchOS 6.0, *)
-@available(iOS 13.0, *)
-@available(OSX 10.15, *)
+@available(tvOS 14.0, *)
+@available(watchOS 7.0, *)
+@available(iOS 14.0, *)
+@available(OSX 11, *)
 public extension Color {
     static func rgbToColor(_ rgb: [Double]) -> Color {
         return Color(red: rgb[0]/255, green: rgb[1]/255, blue: rgb[2]/255)
