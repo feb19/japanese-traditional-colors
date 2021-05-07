@@ -13,24 +13,32 @@ import SwiftUI
 @available(iOS 14.0, *)
 @available(OSX 11, *)
 public extension Color {
+    /// RGB 配列から Color に変換します
+    /// [ff, ff, ff] -> Color
     static func rgbToColor(_ rgb: [Double]) -> Color {
         return Color(red: rgb[0]/255, green: rgb[1]/255, blue: rgb[2]/255)
     }
 
+    /// RGB 配列から 16 進数で表す String に変換します
+    /// [ff, ff, ff] -> #ffffff
     static func rgbToHexString(_ rgb: [Double]) -> String {
         let rgbHex: Int = Int(rgb[0]) << 16 | Int(rgb[1]) << 8 | Int(rgb[2]) << 0
         return String(format: "#%06x", rgbHex)
     }
 
-    static func hexToColor(argb: Int) -> Color {
+    /// 色を表す ARGB の Int から Color に変換します
+    /// 0xffffffff -> Color
+    static func argbToColor(argb: Int) -> Color {
         return Color(
-            red: Double((argb >> 16) & 0xFF),
-            green: Double((argb >> 8) & 0xFF),
-            blue: Double(argb & 0xFF),
-            opacity: Double((argb >> 24) & 0xFF)
+            red: Double((argb >> 16) & 0xFF) / 255.0,
+            green: Double((argb >> 8) & 0xFF) / 255.0,
+            blue: Double(argb & 0xFF) / 255.0,
+            opacity: Double((argb >> 24) & 0xFF) / 255.0
         )
     }
 
+    /// 16 進数で表す String から Color に変換します
+    /// #ffffff -> Color
     static func hexToColor(hexString: String) -> Color {
         var cString: String = hexString.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         if cString.hasPrefix("#") {
