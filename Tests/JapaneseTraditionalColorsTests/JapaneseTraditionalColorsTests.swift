@@ -55,6 +55,8 @@ final class JapaneseTraditionalColorsTests: XCTestCase {
     func testColorsHasRGB() {
         JapaneseTraditionalColors.allCases().forEach { color in
             XCTAssertEqual(color.rgb.count, 3)
+            XCTAssertNotEqual(color.name, "")
+            XCTAssertNotEqual(color.yomi, "")
         }
     }
 
