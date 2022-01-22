@@ -14,20 +14,26 @@ import SwiftUI
 @available(OSX 11, *)
 public extension Color {
     /// RGB 配列から Color に変換します
-    /// [ff, ff, ff] -> Color
+    ///
+    /// - Parameter rgb: `[ff, ff, ff]` 的な感じで渡します
+    /// - Returns: Color が返却されます
     static func rgbToColor(_ rgb: [Double]) -> Color {
         return Color(red: rgb[0]/255, green: rgb[1]/255, blue: rgb[2]/255)
     }
 
     /// RGB 配列から 16 進数で表す String に変換します
-    /// [ff, ff, ff] -> #ffffff
+    ///
+    /// - Parameter rgb: `[ff, ff, ff]` 的な感じで渡します
+    /// - Returns: `#ffffff` 的な感じで返却されます
     static func rgbToHexString(_ rgb: [Double]) -> String {
         let rgbHex: Int = Int(rgb[0]) << 16 | Int(rgb[1]) << 8 | Int(rgb[2]) << 0
         return String(format: "#%06x", rgbHex)
     }
 
     /// 色を表す ARGB の Int から Color に変換します
-    /// 0xffffffff -> Color
+    ///
+    /// - Parameter argb: `0xffffffff` 的な感じで渡します
+    /// - Returns: Color が返却されます
     static func argbToColor(argb: Int) -> Color {
         return Color(
             red: Double((argb >> 16) & 0xFF) / 255.0,
@@ -38,7 +44,9 @@ public extension Color {
     }
 
     /// 16 進数で表す String から Color に変換します
-    /// #ffffff -> Color
+    ///
+    /// - Parameter hexString: `#ffffff` 的な感じで渡します
+    /// - Returns: Color  が返却されます
     static func hexToColor(hexString: String) -> Color {
         var cString: String = hexString.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         if cString.hasPrefix("#") {
